@@ -2,7 +2,7 @@
 set -xe
 
 # Copiar WAR do S3 para Tomcat
-aws s3 cp s3://SEU-BUCKET-AQUI/SpringBootHelloWorldExampleApplication.war \
+aws s3 cp s3://devops-app-deploy-492683309070/SpringBootHelloWorldExampleApplication.war \
     /usr/local/tomcat9/webapps/SpringBootHelloWorldExampleApplication.war
 
 # Definir permissões
