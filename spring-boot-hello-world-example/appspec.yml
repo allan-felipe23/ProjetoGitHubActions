@@ -1,0 +1,18 @@
+version: 0.0
+
+Hooks:
+  BeforeInstall:
+    - Location: aws/scripts/before-install.sh
+      Timeout: 300
+  AfterInstall:
+    - Location: aws/scripts/after-install.sh
+      Timeout: 300
+  ApplicationStart:
+    - Location: aws/scripts/application-start.sh
+      Timeout: 300
+  ApplicationStop:
+    - Location: aws/scripts/application-stop.sh
+      Timeout: 300
+  ValidateService:
+    - Location: aws/scripts/validate-service.sh
+      Timeout: 300
